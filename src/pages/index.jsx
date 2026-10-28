@@ -2,7 +2,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import {
-  Hero, Section, StartHere, ProductGrid, AppGrid, SdkGrid, VerticalShowcase, SecurityPillars,
+  Hero, Section, StartHere, ProductGrid, AppGrid, SdkGrid, VerticalShowcase, SecurityPillars, SystemMap,
 } from '@sentin8/site-engine/components';
 import site from '../../site.json';
 
@@ -28,6 +28,25 @@ const startHere = site.startHere || [
   },
 ];
 
+const mapPlanes = [
+  {
+    title: 'Serving',
+    items: ['OpenFin8:CA', 'OpenFin8:US'],
+  },
+  {
+    title: 'In design',
+    items: ['OpenFin8:UK', 'OpenFin8:BR', 'OpenFin8:EU', 'OpenFin8:AU'],
+  },
+  {
+    title: 'Kernel',
+    items: ['openfin8-core (consent ledger)', 'recipient registry', 'CSDF minimization'],
+  },
+  {
+    title: 'Composed by',
+    items: ['Bank8 (the first customer)', 'recipient-only fintechs'],
+  },
+];
+
 export default function Home() {
   return (
     <Layout description={site.tagline}>
@@ -35,6 +54,7 @@ export default function Home() {
         <Hero
           title={site.name}
           tagline={site.tagline}
+          visual={<SystemMap name={site.name} planes={mapPlanes} />}
           actions={[
             { label: 'Read the docs', href: '/docs', primary: true },
             { label: 'Security', href: '/docs/security' },
