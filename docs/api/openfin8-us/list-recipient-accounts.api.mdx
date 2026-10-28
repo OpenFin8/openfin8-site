@@ -1,0 +1,66 @@
+---
+id: list-recipient-accounts
+title: "`GET /v1/recipient/accounts`"
+description: "List recipient accounts."
+sidebar_label: "`GET /v1/recipient/accounts`"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVdtu4zYQ/ZUBX2oDkp3sFovUb8HmgqC7TVAnwAJRkDDkyOKGHrIcyolr+Hv6H/2yYmTLTjf5gD70SSA513POjFYq6xmrya0KEal81PTkaKbuCjknnV2gC6smyjvO9wmNiw4p32tjQkuZVaEScgzEyGqyUh8ODuRjkU1yUbzVRF3+qgplAmWkLK86Ru9MF3v8ncVkpdg0ONdvfc9OvsE22di0nMMc05izzjhHyhA1c25SaGcNIC3Qh4gwuDy+Ov1c/gJNIORcUZ0Q65DmwwnkBqEO6VknixZiCgtnMYENpu0CDr6gnWEaX+mlnBmiXvqgbVHR5+nJWTl35ObuT7RDcLzzL6W7FLxHWwCHLkuPCzwGu4SLqVxWtM+9S+kyo6+hBMbktJfgkJMmjjohZb+EwbNLWDqLlJ3RflhU1HujBc2gCYQ+CI/f0WTIAZ4QY1fGBligQCXOY17Cs8tNaHNFjhYSkGZQO/SWO3PftQ/hmXikCpVd9qgm6njL99Ueb7Ver9eF+vng8C1rv4UMus3NpuCMVnWWH99afnXMUoLkFq6NQEZ5zEaYnOmMSrIwmja5vFST27vihxBfHGfYSbNXC48qqkhk28cUqLZvIoEtSVu3UUUXNTxsTe+dfXjFry0gYW4TMQTyy85zF0oOvTIrYvRoJJVtU99Xr5KfuC8F2CREgkHE1LV98w3OW2fRO0Ku6O+/Po4OR5+gUtMuHvT4V2o4gut9erg4YdAJgXNIaMFRRX0PCTm0yaDIw0LLIqsAtfMZN81vpL4LJVhtYKAAeyDex0F7v4dg8KjNk8gaTJhHnYcinTnmJsjqmGFWhYo6N2qixovD8Q708as14qgOIo9ecaLn2tFR2crrvxmfdro9gsuIdOboaHIzhRJupvB6h4HVWe8nfCAwLz6NXkCGaTjpOyxNg+ZJCBNzbrTQVnT4OCqj1waBW2OQOSQINUj4o7K2L9KkdwaJUQonPZe6v15cw+XvcBy1abD8MDqQ3rrJrR2mdw3WhVpg4k1vB6PDzVUMnOeaXoV+OD+9hvcBfPgRo9V+4f4/IP/NAcnLKKxmfMnj6LUjYb1NXsjbTMutWhx2f9gtB6pQu4m5K1QTOIvRavWoGW+SX6/l+o8W03ZRLnRy+lHm6fZuXagGtRUN3q7UEy43ax2jhF1o30oxb37N67tXk3x+eq3W638AtbzqTA==
+sidebar_class_name: "get api-method"
+info_path: docs/api/openfin8-us/openfin-8-us
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"`GET /v1/recipient/accounts`"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/recipient/accounts"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+List recipient accounts.
+
+list consented accounts for the recipient.
+If `consent_id` is provided, returns only the accounts the customer
+selected during the provider's consent screen (per FDX UX Guidelines
+§3.1.6 "Select Accounts"). The account IDs are stored in
+consent_resources and used to filter the Ledger account list.
+If no consent_id is provided, returns all accounts (backward compat).
+
+<ParamsDetails>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./list-recipient-accounts.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./list-recipient-accounts.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

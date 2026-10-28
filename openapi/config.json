@@ -1,0 +1,26 @@
+{
+  "openfin8-ca": {
+    "specPath": "openapi/openfin8-ca-spec.json",
+    "outputDir": "docs/api/openfin8-ca",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "openfin8-us": {
+    "specPath": "openapi/openfin8-us-spec.json",
+    "outputDir": "docs/api/openfin8-us",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "openfin8-uk": {
+    "specPath": "openapi/openfin8-uk-spec.json",
+    "outputDir": "docs/api/openfin8-uk",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  }
+}

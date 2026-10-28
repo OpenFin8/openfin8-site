@@ -1,0 +1,70 @@
+---
+id: list-recipient-providers
+title: "`GET /v1/recipient/providers`"
+description: "List recipient providers."
+sidebar_label: "`GET /v1/recipient/providers`"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVk1v2zgQ/SsDXtICtJJ0F4tAt6JtimLTzcJJFgtYRsSQI4uNPFQ5lGLD0H9fUPJXHBdZYA976ckWyXl88/WGKxHUjEU6Ea5GGj0oerQ0E1MZv70K1tEXI1JRWQ73HrWtLVK4r71rrUHPQgqPXDtiZJGuxLuzs/hjkLW3dTQXqbj+XUihHQWkEHdVXVdW9+Cn3zgeWQnWJc5V/BeWNYpUuIdvqIOQB1jjDQfYcACtgqrcLOm5fG+sRxMd2nGcyvhRow92YLnb2t2nvFdLIYUNOOf/wgOQgl8esrFGSEFqjvEK5gb9na+EFIVZ/IWeI6gU3NS18wHNRxXUh6rhMISYgwrNET/2jHeEOfiYwkPCtyXC5ce/oR0MIJS4o25QV8ojJ6KTkeoRtML5uQoiFU3T+/Ic/c8NkjUDxtbFf0VsQ+SEYbCEu/FVD9SH7FWM7fXGcl2pJUSz3n4dulcRxjizHIaKh8FosD+aktfLZn1Nd3hPhAG9xnmeBEbf9inopAg2VLjn2AflzUuwgTR6NFuUH9r3tTle96rounjq17NfXnbrV8tsaQaFWaQelQHWrsYelVE33oalSCd98fX7Ip1Mu+khtSvLAfyLJuEko4yimvTFaGI0tntQeDePMcko3yxGqSlshZyDH1K0TDLa5nuzC8ojqCa4kd/F5KlEAkWA1FrvaI4UTjij3PJ9YRZbEcuhqNQMLENoPKEBR/CGEeFmyZA3tVEB75Ha/K2EJxvKgSFSe8LxyhKMmytL0DAaUENS96oYYoEH9VAhlIqBHIyvbiSwG3A2qmEZWss2HtPeMY+cn8EIFC33wqgVxRLXrkUPigxoR4Q6QHAZxaNKB9vuaiqBP1xfzVYDI5oh4JZhI01JRpuaAC5VjTBXQZc4eIGXlgLq8hmDgW6Uc690SDPKV5DtJDUTKUxWYI3sm1DC0Q6S6x6TkCQJdFPocpnRU4keAZUuQStvIJYXQx5xcgn5UaRc9oHIB7w86u4cQ+ni1JphFO5ahVKk4rQ9P936cbo/wSwVrm/dddPEUVhYuhg1/EInbpCCpQu4rpEuLV2kdzcwgrsb2J+fz+sa3vS6+1uygCfr8W0ag8dIYaRL1I+brHCpomTIoX5oVFdKI3CjNTI7D66ACH8xKswiellZjbGV09VaJMXXL7dwPYb3tdIljt4lZ9E3EwkXFv3RA50U7WaCiLPkfFiqHYe5oj3o/POnW/hBBPPDIK12w/6nDvzUgf9NB9ajOOAinNaVshRruxneJIMoTER73j/U1m4J+fzZWDoO8dRq9aAY73zVdXH5e4M+DsGpFK3yNua0n4JSlKhMbLXJSjziUqTivdZYR9xWVU3/YDh8/MbZuVWsz59uRdf9A1oZHFQ=
+sidebar_class_name: "get api-method"
+info_path: docs/api/openfin8-us/openfin-8-us
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"`GET /v1/recipient/providers`"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/recipient/providers"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+List recipient providers.
+
+list FDX data providers from the
+`provider_profiles` registry.
+Provider profiles are auto-registered when an environment's
+`is_fdx_provider` flag is turned on (see Sys `update_env`), with the
+env's auth domain used as the issuer URL. The table has no RLS, so the
+catalog is visible cross-org - any recipient can discover and connect to
+any active provider. No static seed data is required.
+Response shape matches the eFintech recipient catalog contract:
+`{ "providers": [{ id, name, supportedDataClusters, status, ... }] }`,
+where each card reads `name`, `supportedDataClusters`, and `status`.
+
+<ParamsDetails>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./list-recipient-providers.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./list-recipient-providers.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

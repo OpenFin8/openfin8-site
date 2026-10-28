@@ -1,0 +1,73 @@
+---
+id: list-recipient-consents
+title: "`GET /v1/recipient/consents`"
+description: "List recipient consents."
+sidebar_label: "`GET /v1/recipient/consents`"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVttu4zYQ/RViXpIAspJsiyLQW7DdpIvuIkAuQAHbsGlqHHMjk1zOyIlh6N+LkSxfInezTZ/6ZIvknJk5c10B60eCrA8+oOtNtHuy7hGGiXxHzda7zzlkUFjiUURjg0XHI+MdoWOCBIKOeo6MUVBW4PQcIQNTEvs5xpHNIQHrIIPvJcYlJJAjmWiDQEMGV7ZgjGqyVK0IJBDxe2kj5pBNdUGYAJkZzjVkK+BlEHziKHYmMPVxrhkyKEubQ1UNRZqC2Efy/sPZmfzsK735ExIw3jE6llsdQmFN7e3pN5Inq65KP/mGhjsO3LakqDUpSrhK97zow4awYQIhCrdsGwM3N1tNOkYtTFnGOb1twY3Dje7on5WfKp6hij9lWB2f/WiF6Bc273zVkU2AWHMpgSfjA8qfXLMemaKkOgkSICzQMOYjbYwvHY9sLscmoq5PxYMy5O1Hl5Htwx8FXAB6bGuj9gn5KADWOyW3xHoeUqj2vXwzk15j3s9wk6E1vS2pEyy8eyTFvlayT8bbMV2rr17ru47aMeZK8FSLp47nNkYfSTXkq9KxLbbXOqIilIqcFHhS2/NuX9fu2byG2c2JA3hd+VagA9A0iH8FkVsKhV4qEa3B1qn339ltgBrMQ1n7fg2XDYqyOakWWroc7+RRo7epp59ipA1KI1OL7xTS+4rliyZWDcpevVQJsOUCd1vcx0b/rX/uOrxrX/TP9GOIL5b4dt2noark6a9nv3Q79VdLZN2jmuYvWUS9jlgNTWjKaHlZj532HrL+UGbAKx8tcbcfUjpwAydNUWnDdrGxn9TUx/0emg7cLXIZHanxarBp2gPIVD9N02E1VsfPUYeA+YkiXwvjlXWMZqZ0CEc0cFf5y9p7+sP7J2W0U0FHQjVuR1Yq5d4/auGPhmPp13PkmZcp/IhcT1yeQQani/PTjX2nOxPZuqmvk2HNvUz2qXUXvbpt7zNzh46tu1A3Ad2VdRfZw53qqYc7tbsONE1oU47HV7//pRa/pS/q2UY8yVraemaG5qntWTTTkoRJTYV1vVBog4pKY5DIR5lSAn/Rm+Yv4mRhDUoyZJsd4uvne3Vzqy6DNjPsfUjPxLdcDJ5ajAcfVAksMFLj21l63hwFTzzXbgd6fP3pXh0mcPyao9V2U/i/J9K6PTC+8GkotHV1B4mFONlkVR8W5/WGsDa32ZM2q8vME8uj1WqiCR9iUVVy3Kx2Uoe5JZk9283tH6k8uPgdNPAJl52NcqGLUl6CFPtCRyta6+JPYIY6l/zor9ail8Zg4B2pzr4nKJsqu/50D1X1NyMR4YA=
+sidebar_class_name: "get api-method"
+info_path: docs/api/openfin8-us/openfin-8-us
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"`GET /v1/recipient/consents`"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/recipient/consents"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+List recipient consents.
+
+list active consents for the recipient.
+Returns `{"consents": [...]}` (wrapped) so the eFintech app's
+FdxConsentsHook can parse `response.data['consents']`.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails
+  {...require("./list-recipient-consents.ParamsDetails.json")}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./list-recipient-consents.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./list-recipient-consents.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,68 @@
+---
+id: auth-consent-ui
+title: "`GET /v1/auth/consent/ui`"
+description: "Auth consent ui."
+sidebar_label: "`GET /v1/auth/consent/ui`"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVk1vGzcQ/SsDniRgV7LTonD2ZsRx4LaJDEtGC3iNhCJntYy4Q5bkylaE/e/FUJZtWD30XPS0IDnzOB/vzXInklxFUd0J5SgiJXFfCOcxyGQcXWlRCdmn9uvT6dfeiEIEjJ7XUVQ78e7khD8aowrGs5eoxOw3UTBiYsRqJ6T31qiMOf0e2WQnomqxk8e+lxd/glTK9ZSmqo/JdRimMcmEHVICL2NMbXD9qgWkDVrnEUaz8+uPH8r30DrCmGpqAmLjQjeuILUIjQsPMmjU4IPbGI0BtFN9Bhz9jnqFYXott7yO4OXWOqmLmj7MLy7LzpDpzA/UYzDx2b/k7IKzFnUB0eVbDnWBpdNbuJrzZk0vdz9faVJE20AJEYORlsEhBUnRy4CU7BZGDyZgaTRSMkracVHTwRs1yAiSwHkkcMvvqBIkB2tEn8PYFxbIUYmdT1t4MKl1farJ0IYBaQWNQatjNrc5fXAPFCeiEMkki6IS5/sWxOuXeothGIZC/Hxyety1Ly4BM2UfcEItsuVPx5afTYwcAt/NvX6i1jQq7uRKJhR8S0TVB5O2orq7L95AnPepPfhBbyY11RQw9YHg5vKP5xMvVwgaG0OGHSc13WSjCBJ+nc++ZOOXc0it3CdR9gYCksYQJ7BoX4NwEZXtNcaqphLmOWhrYspV5oTK6FGZxih4FTQ3TMNnmXLD4YpDBOU0gneGUmSsp4pDRIsqB3Qhk1zIpUUYqRbVeukeMRZARq1JdlhA2nosoJNxjRqo75YYClhKK0nhmDHrXCsXzA+sBSz7lBzB6Ho2XzBlppvTKec7PfRAeub3wfUCaftvvDTSNrtwvICkc06gUVm5HyQswIOoocGkWhgdX/7EuLEoRIepdTx9VphEIbxMrajEkUseR4YaxzQ7MJd10Rg6K/so3jJnnvl/BjOPdGnorLqdQwm38yymcilpzdTUnMfzpBgxSze/TB6BRTmuDvwqc09Y12weWxkMrYrMa0Olt1IhxF4pjNEFcA0w/FnZ6EfWmTUKKSIHzr1kYVwtYHYD516qFst3kxPOLU+AxmD4R4OhEBsMcZ/byeR0v+VdTJ2kV9DfPn1cHPetN9/eFmj3MrX/V9l/XmWcmKhEwsc09VYaYvb0wTIP9pK7E5tTUeQ3wP6Pnt8IhegNPxRaFxPb7HZLGfE22GHg7b96DE9zeyOD4dLyaihEi1Izle92Yo3b/V8GPQNupO05lqOXwnD/ahp8+rgQw/A33NIOtg==
+sidebar_class_name: "get api-method"
+info_path: docs/api/openfin8-us/openfin-8-us
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"`GET /v1/auth/consent/ui`"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/auth/consent/ui"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Auth consent ui.
+
+return RFW consent page definition.
+Returns a JSON RFW definition that auth-ui renders. The definition
+includes:
+- Scope list with FDX-specific descriptions and Material Icons code points
+- Account selection DataTable (checkboxes, nickname, type, masked number, balance)
+- "Authorize" button (POST to /v1/auth/consent/approve)
+- "Deny" button (POST to /v1/auth/consent/deny)
+- Data endpoint declaration for account fetch (/v1/auth/consent/accounts)
+
+<ParamsDetails>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./auth-consent-ui.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./auth-consent-ui.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

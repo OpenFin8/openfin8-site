@@ -1,0 +1,25 @@
+[
+  {
+    "type": "category",
+    "label": "openfin8-uk",
+    "link": {
+      "type": "doc",
+      "id": "api/openfin8-uk/openfin-8-uk"
+    },
+    "items": [
+      {
+        "type": "doc",
+        "id": "api/openfin8-uk/openfin-8-uk",
+        "label": "Overview",
+        "className": "api-overview"
+      },
+      {
+        "type": "doc",
+        "id": "api/openfin8-uk/get-v-1-health",
+        "label": "`GET v1/health`",
+        "className": "api-method get"
+      }
+    ],
+    "collapsed": true
+  }
+]
