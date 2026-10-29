@@ -7,7 +7,7 @@ Card-Based Payment Instrument Issuers.
 
 ## Summary
 
-OpenFin8:UK **implements the OB surface** (OBARCH-5, first full pass):
+OpenFin8: UK **implements the OB surface** (first full pass):
 the first adapter with a non-FDX wire. The landed surface:
 
 - the **intent-based consent model** - the client-credentials staging
