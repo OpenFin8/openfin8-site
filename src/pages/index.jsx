@@ -31,11 +31,11 @@ const startHere = site.startHere || [
 const mapPlanes = [
   {
     title: 'Serving',
-    items: ['OpenFin8:CA', 'OpenFin8:US'],
+    items: ['OpenFin8:CA', 'OpenFin8:US', 'OpenFin8:UK', 'OpenFin8:EU'],
   },
   {
     title: 'In design',
-    items: ['OpenFin8:UK', 'OpenFin8:BR', 'OpenFin8:EU', 'OpenFin8:AU'],
+    items: ['OpenFin8:BR', 'OpenFin8:AU'],
   },
   {
     title: 'Kernel',
