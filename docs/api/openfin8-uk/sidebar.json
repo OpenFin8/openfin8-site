@@ -14,10 +14,233 @@
         "className": "api-overview"
       },
       {
-        "type": "doc",
-        "id": "api/openfin8-uk/get-v-1-health",
-        "label": "`GET v1/health`",
-        "className": "api-method get"
+        "type": "category",
+        "label": "open-banking/v3.1",
+        "link": {
+          "type": "doc",
+          "id": "api/openfin8-uk/get-account-subresource"
+        },
+        "items": [
+          {
+            "type": "category",
+            "label": "open-banking/v3.1/aisp/account-access-consents",
+            "link": {
+              "type": "doc",
+              "id": "api/openfin8-uk/get-account-subresource"
+            },
+            "items": [
+              {
+                "type": "category",
+                "label": "open-banking/v3.1/aisp/account-access-consents/{consentId}",
+                "link": {
+                  "type": "doc",
+                  "id": "api/openfin8-uk/get-account-subresource"
+                },
+                "items": [
+                  {
+                    "type": "category",
+                    "label": "open-banking/v3.1/aisp/account-access-consents/{consentId}/accounts",
+                    "link": {
+                      "type": "doc",
+                      "id": "api/openfin8-uk/get-account-subresource"
+                    },
+                    "items": [
+                      {
+                        "type": "category",
+                        "label": "open-banking/v3.1/aisp/account-access-consents/{consentId}/accounts/{accountId}",
+                        "link": {
+                          "type": "doc",
+                          "id": "api/openfin8-uk/get-account-subresource"
+                        },
+                        "items": [
+                          {
+                            "type": "doc",
+                            "id": "api/openfin8-uk/get-account-subresource",
+                            "label": "`GET open-banking/v3.1/aisp/account-access-consents/{consentId}/accounts/{accountId}/{resource}`",
+                            "className": "api-method get"
+                          },
+                          {
+                            "type": "doc",
+                            "id": "api/openfin8-uk/download-statement",
+                            "label": "`GET open-banking/v3.1/aisp/account-access-consents/{consentId}/accounts/{accountId}/statements/{statementId}/file`",
+                            "className": "api-method get"
+                          }
+                        ],
+                        "collapsed": true
+                      },
+                      {
+                        "type": "doc",
+                        "id": "api/openfin8-uk/get-accounts",
+                        "label": "`GET open-banking/v3.1/aisp/account-access-consents/{consentId}/accounts`",
+                        "className": "api-method get"
+                      }
+                    ],
+                    "collapsed": true
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/openfin8-uk/delete-aisp-consent",
+                    "label": "`DELETE open-banking/v3.1/aisp/account-access-consents/{consentId}`",
+                    "className": "api-method delete"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/openfin8-uk/get-aisp-consent",
+                    "label": "`GET open-banking/v3.1/aisp/account-access-consents/{consentId}`",
+                    "className": "api-method get"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "doc",
+                "id": "api/openfin8-uk/stage-aisp-consent",
+                "label": "`POST open-banking/v3.1/aisp/account-access-consents`",
+                "className": "api-method post"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "type": "category",
+            "label": "open-banking/v3.1/cbpii",
+            "link": {
+              "type": "doc",
+              "id": "api/openfin8-uk/stage-funds-confirmation-consent"
+            },
+            "items": [
+              {
+                "type": "doc",
+                "id": "api/openfin8-uk/stage-funds-confirmation-consent",
+                "label": "`POST open-banking/v3.1/cbpii/funds-confirmation-consents`",
+                "className": "api-method post"
+              },
+              {
+                "type": "doc",
+                "id": "api/openfin8-uk/confirm-funds",
+                "label": "`POST open-banking/v3.1/cbpii/funds-confirmations`",
+                "className": "api-method post"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "type": "category",
+            "label": "open-banking/v3.1/event-notifications",
+            "link": {
+              "type": "doc",
+              "id": "api/openfin8-uk/poll-event-notifications"
+            },
+            "items": [
+              {
+                "type": "doc",
+                "id": "api/openfin8-uk/poll-event-notifications",
+                "label": "`GET open-banking/v3.1/event-notifications`",
+                "className": "api-method get"
+              },
+              {
+                "type": "doc",
+                "id": "api/openfin8-uk/submit-event-notifications",
+                "label": "`POST open-banking/v3.1/event-notifications`",
+                "className": "api-method post"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "type": "category",
+            "label": "open-banking/v3.1/pisp",
+            "link": {
+              "type": "doc",
+              "id": "api/openfin8-uk/get-domestic-payment-consent"
+            },
+            "items": [
+              {
+                "type": "category",
+                "label": "open-banking/v3.1/pisp/domestic-payment-consents",
+                "link": {
+                  "type": "doc",
+                  "id": "api/openfin8-uk/get-domestic-payment-consent"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "api/openfin8-uk/get-domestic-payment-consent",
+                    "label": "`GET open-banking/v3.1/pisp/domestic-payment-consents/{consentId}`",
+                    "className": "api-method get"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/openfin8-uk/stage-domestic-payment-consent",
+                    "label": "`POST open-banking/v3.1/pisp/domestic-payment-consents`",
+                    "className": "api-method post"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "category",
+                "label": "open-banking/v3.1/pisp/domestic-payments",
+                "link": {
+                  "type": "doc",
+                  "id": "api/openfin8-uk/get-domestic-payment"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "api/openfin8-uk/get-domestic-payment",
+                    "label": "`GET open-banking/v3.1/pisp/domestic-payments/{domesticPaymentId}`",
+                    "className": "api-method get"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/openfin8-uk/create-domestic-payment",
+                    "label": "`POST open-banking/v3.1/pisp/domestic-payments`",
+                    "className": "api-method post"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "doc",
+                "id": "api/openfin8-uk/stage-domestic-vrp-consent",
+                "label": "`POST open-banking/v3.1/pisp/domestic-vrp-consents`",
+                "className": "api-method post"
+              },
+              {
+                "type": "doc",
+                "id": "api/openfin8-uk/file-payments-unimplemented",
+                "label": "`POST open-banking/v3.1/pisp/file-payment-consents`",
+                "className": "api-method post"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "type": "category",
+        "label": "v1",
+        "link": {
+          "type": "doc",
+          "id": "api/openfin8-uk/get-v-1-health"
+        },
+        "items": [
+          {
+            "type": "doc",
+            "id": "api/openfin8-uk/get-v-1-health",
+            "label": "`GET v1/health`",
+            "className": "api-method get"
+          },
+          {
+            "type": "doc",
+            "id": "api/openfin8-uk/sweep-staged-intents",
+            "label": "`POST v1/internal/sweep/staged-intents`",
+            "className": "api-method post"
+          }
+        ],
+        "collapsed": true
       }
     ],
     "collapsed": true

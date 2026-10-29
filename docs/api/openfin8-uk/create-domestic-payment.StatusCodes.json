@@ -1,0 +1,1 @@
+{"responses":{"201":{"description":"The payment accepted (the OB envelope)"},"400":{"description":"Field/idempotency/JWS/consent errors"},"503":{"description":"The Payments proxy transport absent / the Directory down"}}}

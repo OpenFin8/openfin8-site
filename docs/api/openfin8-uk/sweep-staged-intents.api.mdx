@@ -1,0 +1,65 @@
+---
+id: sweep-staged-intents
+title: "`POST /v1/internal/sweep/staged-intents`"
+description: "Sweep staged intents."
+sidebar_label: "`POST /v1/internal/sweep/staged-intents`"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVE1P20AQ/SujPQXJH4RyQOYUDpUQVCAg6oEg2Hgn8RZndrs7dkijXPsD+hP7S6qxTQu0Ug+99rTyaOb5zXszs1Wsl1EVt8oSYyBdq7tEOY9Bs3V0alSh4hrR30fWSzT3kkYcVaICRu8oYlTFVh3sH8pjMJbBeilVhbqpEPDJ24AG+nIYyiHgJywZDYzIQem66J7a7RIVsWyC5Y0qbu+SN4DXwuQNVDajGcmf+nDah/v/bqDjDqPpWXpQwMXJOaTQUKobrlywX36hzMhYBM1wcFgdA1cIZXAEPrinTVrquo7AlY2AZLyzxOCoyzJY1jqgmVEsKzRNjXsZvOz7ueGVaxEeJmtt2dJy0hOIncjw/eu3GV0NijwAV8E1y6rD901AYD2vEUaMYWVJ18eg4fJ6CjoE21paQq0ZZ1RqIsfwszfQYFA/M9jLVKJWyJUTS72LrBLlNVeqUHk7zp/tzzvF8ldiituWFk4cZss1qkJGhBaWjtLmUf1mExJbOoILj/Te0lExPYMUpmcgRTDX9CisR2LHFWqTfwyWESaXp9C+y8bZU94eZvvZeFBSUOBkKLpmTUYHAzaCb+a1jRUamG9eZ53blZXhashg6HT8cHrTp5zbEqlEGFXMPhZ5vl6vM+E10MpcWGbNYy6htO6T947BuyDNRXCLDu8N79iEhS4RLJV1Y9BAhQFBB4QmvuChGQZIWFvuHRYVSuc3wS4rBnJsSwQfMGJo0YhrXUlEUZ/0SsTvurmCiddlhelBti8GGVF9YTH8MWGXqBZD7A3az8Z9SOZgpekF9MPlxfUN/HUiHt6avlXDFv9f039eU954sYLxiXNfa0tiVRNqUblf2VvVjrulHG520h9peV8v7l2iKtn14lZtt3MdcRrq3U7CnxsMw5FtdbDCXb52L66EjILa7X4AZNInkQ==
+sidebar_class_name: "post api-method"
+info_path: docs/api/openfin8-uk/openfin-8-uk
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"`POST /v1/internal/sweep/staged-intents`"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/internal/sweep/staged-intents"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Sweep staged intents.
+
+The staged-intent expiry sweep (UK-2: OBL - un-authorized intents
+die at 24h; the cron proxy-calls this endpoint on the declared
+schedule). The expired intents move `AwaitingAuthorisation →
+Rejected` through the pure table (terminal; a PSU arriving late
+cannot authorize a dead intent).
+
+<ParamsDetails>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./sweep-staged-intents.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./sweep-staged-intents.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: submit-event-notifications
+title: "`POST /open-banking/v3.1/event-notifications`"
+description: "Submit event notifications."
+sidebar_label: "`POST /open-banking/v3.1/event-notifications`"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlVU1v2zgQ/SuDuawNSHLS7SFQT82iC2Sb3QSxsz3YRk1LY4mxRDL8sCMY+u/FSNrESVyg9/XFAjmcefPeG/KAXhQO0znSjpR3uIxQG7LCS62uckzRhXUt/fdu+7vSXm5k1u06jNDSYyDnL3XeYHrATCtPyvOnMKYaAicPTitec1lJteAv3xjCFPX6gTKPEebkMisNR2OKs5Lg5vIauprxcU3o0DjHn6M9rUutt1DrnMYJRmgsQ/eSHNcYGnqpJqwVDUYoPdX9uvQVb/wrqkDYnoLRJYFXbcPID/hWX3h3BV1iiKEgFaSiqlmojSXaaFun0AcPiYxoKi1yN06wbaNnAF2ef46KTJ/bxJYDmWdpKcfU20DdgjNaub7TD2cf+e/X0IssI+Mph5HSMAg27tA4yoKVvsF0vnzLRQfIn0qYLNRCrW5vpjOYaEMqXgu1laqY7A61eGiTQy1VO3kvpVtB3JEzyLhQrOMrgf/6No2dLBTlz8QNZ7ZkFVW/OcipkjuyDey13ZJdKL1Xrgt5DBToE/hSOrA6eALZb8xub+ONyKQqQKqCHIPp7FOTLzVb3mjHpjTCl5jim65+T85PdYMRss3vXgbiy5OoDcv7YsW5ClW1bCOUaqOPHcglNlJdxGH7bhqmpLxUF3BjSP0p1UV6/xViuP8KfAgGXDBiQ96RyCffrPQEn2+vgLEmT5Pdx+QsOR8n0M0VH7ocDk29ULmwOVNjwrqSrqQc1s3rqGtZSzZMUDnZjsK/r2Z9yLXMSGUEo9J749LJZL/fJ4xrgJVoWyRh21NY9cHjT2C07c2oN12+N7hdsBuREUiVVSGnHEqyBMISBHeEQ3gYUsJe+hL+G8tMm8bKouyNmhEYS47sjnJWuTviOlmUqJn8rps7+GxEVlL8ITnjOyJn1jeS7MmANsIdWdcLdJac90vsm1qoo9Qn5+InDlq9Vf7oPv1fzN9wTXt68hNTCamY02ArZqKfxTked4gRMpcY4al5XEZY8hynczwc1sLRva3alpcfA9nhktsJK8WaR3DOY1mSyFnx+QG31GCKf/QCxDOGxuH8UKTvH7d2eXR9sBYY4Xp4FJlWTNGKPT+YYo8pIj+yPcz00K8dsBKqCKLg2D4n/34AccCsxA==
+sidebar_class_name: "post api-method"
+info_path: docs/api/openfin8-uk/openfin-8-uk
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"`POST /open-banking/v3.1/event-notifications`"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/open-banking/v3.1/event-notifications"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Submit event notifications.
+
+`POST /open-banking/v{maj}.{min}/event-notifications` - the webhook
+mode submission (JWS-signed payloads - the kernel's delivery worker
+owns the queue; this route is the TPP-facing ingestion).
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./submit-event-notifications.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./submit-event-notifications.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

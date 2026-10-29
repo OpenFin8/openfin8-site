@@ -1,0 +1,1 @@
+{"responses":{"204":{"description":"The consent revoked (no content)"},"400":{"description":"Unknown consent id (the OBL rule: 400)"}}}

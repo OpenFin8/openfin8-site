@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"The enveloped account list"},"400":{"description":"The consent chokepoint verdict (the OBL 400 rule)"},"503":{"description":"Ledger proxy transport absent"}}}

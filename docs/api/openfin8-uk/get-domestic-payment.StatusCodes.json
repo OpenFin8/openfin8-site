@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"The payment status (the OB envelope)"},"400":{"description":"Unknown payment id (the OBL rule: 400)"}}}
