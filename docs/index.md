@@ -26,9 +26,10 @@ graph TD
     subgraph adapters["adapters (data only, zero forks)"]
         CA["openfin8-ca<br/>FDX v6.x · Canada"]
         US["openfin8-us<br/>FDX v6.x · US"]
-        UK["openfin8-uk<br/>OBL R/W API · in design"]
+        UK["openfin8-uk<br/>OBL R/W API · UK"]
+        EU["openfin8-eu<br/>openFinance V2 · EU"]
     end
-    LEDGER & REG & CSDF & NOTIFY & PROF --- CA & US & UK
+    LEDGER & REG & CSDF & NOTIFY & PROF --- CA & US & UK & EU
     BANK["Bank8<br/>(the first customer)"] -->|"enables openfin8:ca<br/>(sys.services)"| CA
     RECIP["Recipient institutions<br/>(standalone)"] --> US
 ```
