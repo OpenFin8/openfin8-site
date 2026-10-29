@@ -7,12 +7,11 @@ custom_edit_url: https://github.com/OpenFin8/openfin8-core/edit/main/DESIGN.md
 ---
 # openfin8-core - Detailed Design Document
 
-> Status: **PROPOSED** - the extraction design for the multi-country open
-> banking platform (OBARCH-1). This crate is the shared foundation under
-> `openfin8-us`, `openfin8-ca`, and `openfin8-uk` (with
-> `bank8-open-br/eu/au` to follow the same contract). Reading order:
-> this document, then the per-country adapter designs (`openfin8-us`,
-> `openfin8-ca`, `openfin8-uk`).
+> This crate is the shared foundation under `openfin8-us`,
+> `openfin8-ca`, `openfin8-uk`, `openfin8-eu` (with
+> `openfin8-br`/`openfin8-au` to land under the same contract).
+> Reading order: this document, then the per-country adapter designs
+> (`openfin8-us`, `openfin8-ca`, `openfin8-uk`, `openfin8-eu`).
 
 ## 1. Scope & Context
 
@@ -120,7 +119,7 @@ pub trait OpenBankingProfile: Send + Sync + 'static {
     /// (UK {Data, Links, Meta}; FDX flat JSON).
     fn envelope(&self) -> EnvelopeStyle;
     /// Spec publication policy - what docs/openapi.json may carry
-    /// (OBARCH-2: US/CA must exclude the standard surface).
+    /// (US/CA must exclude the standard surface).
     fn spec_publication(&self) -> SpecPublicationPolicy;
 }
 
@@ -275,7 +274,7 @@ Two layers, deliberately:
    (replacing the 6 hardcoded `v6` strings). Config precedence:
    `sys.services.config` (per-env) → env var → profile default.
 
-## 7. Spec Publication (OBARCH-2 tie-in)
+## 7. Spec Publication tie-in
 
 `SpecPublicationPolicy` in the profile trait controls what the
 embedding service may publish in `docs/openapi.json`:
