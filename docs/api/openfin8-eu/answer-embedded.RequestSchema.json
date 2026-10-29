@@ -1,0 +1,1 @@
+{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","description":"The embedded-SCA challenge answer.","required":["answer"],"properties":{"answer":{"type":"string","description":"The PSU's answer to the challenge."}},"title":"EmbeddedAnswerRequest"}}},"required":true}}

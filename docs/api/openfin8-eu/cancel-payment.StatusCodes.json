@@ -1,0 +1,1 @@
+{"responses":{"204":{"description":"Payment cancelled"},"400":{"description":"Unknown payment product"},"503":{"description":"Payments proxy transport absent"}}}

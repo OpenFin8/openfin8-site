@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"Step executed","content":{"application/json":{"schema":{"type":"object","description":"The proxy-back response (the kernel contract shape).","required":["status"],"properties":{"error":{"type":["string","null"]},"output":{},"status":{"type":"string"}},"title":"ProxyBackResponse"}}}}}}

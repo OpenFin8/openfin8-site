@@ -1,0 +1,63 @@
+---
+id: get-transactions
+title: "`GET /v1/ais/consents/{consentId}/accounts/{accountId}/transactions`"
+description: "Get transactions."
+sidebar_label: "`GET /v1/ais/consents/{consentId}/accounts/{accountId}/transactions`"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVd9v4zYM/lcIPbWAE6fdDSjcJ18uDQLccL2ltx9Ig1Wx6FhXm9IoOb0s8P8+0ElvXq8Dttc9GBYkkuL3fSR1UFFvg8pWStug1olyHllH62hhVKa2GH+LrCnoQvaCShRj8I4CBpUd1OVkIj+DoWDrxURl6u7vDoWjiBTFTntf26IPn34OYnxQoaiw0a9EqRDyxRJ0UbiWYoDahghnsUIoHT9pNmjgPZotMhhXtA1STGC6fHczaizZxv6B5p42exCPurcbBWsQQuE8gmf3Gfscr2GL1FrCeg8lI5aOG0DaYe08no9VoqKNNapM5adUbnUIsWLXbivVdV2XqDeT715HUAhVFKGo3CN6ZykCo1yMpk+MURvVJer71wKc0Hl2X/bQy+AdR9AbCank3oBFyzbuVbZaJy+85xhhqN34nu7pYT67g3R3kWob0lNyIT1Y06XPRKeH02phunQY4AFGkvM9DTd7BLDBypIBTb1kz6B7sWrnHje6eIQnS8Y9HSM8W3hLAWyAvjDQDHW67vkZ8IZUOi7QgI29Kg3Gyp2KVCXK61ipTH2L7bRa/BuIKlGWSidSPIvuPFJp6WqErXpJ8RIpWrqCDx7pxtJVNvsEI5i17DxqAnGF0pKmAuHsLXJtCebsWt8f3ZxOfrrMhLb0tv8WS3A7ZPhleZknPQexYkRYTnOhiZ0uKgwJ4OJdvoSPP+fT9ONylr+fQoEcbSn9JefBbsnSFjY6PGIM52OQehzeK1nntwsobY0BNCP4dlPbUKGBlgwyTBl1tDuEqWsaETuPke2mFfjwZjyBs+kU3v4qy/NrYAyu5QJBpAhQaGbR9MnGqsehB86eMSDv0BzTIsfN8SbGEhklPcZGS3mI66LxNUqH97MD5q01WFvCIIVQ2wIpoIhGuhHNfljcwYcfIffC1ehyPBFdjYhVWuRXDbpE7ZDDUdfJ+OK45V2IjaZB6H9ooP9SZA8v6+jw14z833dt3HuhMeKXmPpaWxKaW66FhWMLr9TuQiX9e9Q/Hj1YlajsK8dyeoIt+1+BS/hhM68TVbkQJeThsNEBP3HddbL9e4t8Gpo7zVZvpNVX6y5RFWojJbI6qEfcH4c+ehkwO123kvo3j1i3Hgyj+exOdd2fWLyVeA==
+sidebar_class_name: "get api-method"
+info_path: docs/api/openfin8-eu/openfin-8-eu
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"`GET /v1/ais/consents/{consentId}/accounts/{accountId}/transactions`"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/ais/consents/{consentId}/accounts/{accountId}/transactions"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get transactions.
+
+`GET /v1/ais/consents/{id}/accounts/{accountId}/transactions` - the
+transactions read behind an AIS consent (the lookback window the
+consent pins is applied ledger-side; the chokepoint enforced it).
+
+<ParamsDetails>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./get-transactions.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./get-transactions.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

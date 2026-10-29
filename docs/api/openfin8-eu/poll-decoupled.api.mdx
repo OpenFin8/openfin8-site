@@ -1,0 +1,63 @@
+---
+id: poll-decoupled
+title: "`GET /v1/consents/{id}/authorisations/{authorisationId}/status`"
+description: "Poll decoupled."
+sidebar_label: "`GET /v1/consents/{id}/authorisations/{authorisationId}/status`"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlVd9v2kgQ/ldG+xQkg0mUh8h9cimNkO5UWpLenQgqiz3gbezZ7f6ARpb/99PYhEBCpd7zPSBsz87MNzPfN1sLLzdOJHPhMikWkdAGrfRK0yQXiTC6LL/lmOlgSsxFJCw6o8mhE0ktroZD/svRZVYZdhKJGKHFStMTOC99cCISmSaP5PmoNKZUWRs//u74fC1cVmAl+ck/GRSJ0KvvmHkRvQp8VyAcoPRnoxQYHTwjSsAXCNlpdrBqU3ggvRu04H8EZTHncmXwhbbKPdcaiQNeaYzVMiu4HcZyQ7zqCj5YXsA6bxVtzoJliM8ecLE8YF/2BqKJ3iA4E3OtbSW9SEQIKj+b4yQIuLDqW3Q62AxB5W2afVm/hdig7R8Qv2rlQDRNJLzyJQf58FzMrDV+2Q9BNA2fuh5evyXGPT2S3tEp5DaowyxY5Z9EMl+8hjXlGR9aN3igB1reju8g3l7GGack7+Ja5U18EtfFNb9P8mYJ/ZYZJ9R5oJY7F2y4m05bJjnwhXIQyKuy9dDB9/W6v5KUvzQj05Up0aPrvXsgSbDEn4Y5tXw5slOU6x0oB3rl0G4xhwItdtkKTeh8R11Jboe2x9Ss0BeaFbdBZr6RvhCJ+L0ij0jUxAcWK1rrdur7iWmDtFZ008fwZvYzJK/oBj4ZpI+KbpLxPfRhHJj8koBdYa1IUoZw8R5tqQhurQ6mNX3cW75eJZBOZvG0/U1moLdo4e/ZVRq1/fSFxVNVoIsAJx/SGXz+Kx3Fn2fj9I8RN9KrNa8Jtju1IUUbWEn3iN71BsBMPc7LqNPpBNaqRAfSIpiwKpUrMIdAOVoYWZRebRFGuqo0OUi9t2oVWtFcD4ZwMRrB+3/4sfcODgriKTjIpLUKc9gpX7R1yCNnY7EbcQeLWsFyJotrtMjwLFZSkWtdJ0yeCsl3er0NKsdSETrmQKkyZA0ltSBZ8cz+nNzBpy+QGu5V/2ow5LnmPKy1Qnv2QBOJLVrXzXU4uOw+Ge18Jeko9H8Q0Rl+LV9TqH7Z8v8Xye7XqcefPjalVMSNDrbkZnT6nYvtZXf/tTWLSCTtGj8tmz//8jZaRKLQznOsul5Jh/e2bBr+/COg3W/MrbRKrljl80UTiQJlzuyY1+IRn0Qi0ixDw2tlK8vAmN9cw83iaAXdju9E0/wLHZDY6w==
+sidebar_class_name: "get api-method"
+info_path: docs/api/openfin8-eu/openfin-8-eu
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"`GET /v1/consents/{id}/authorisations/{authorisationId}/status`"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/v1/consents/{id}/authorisations/{authorisationId}/status"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Poll decoupled.
+
+`GET /v1/consents/{id}/authorisations/{authId}` - the decoupled-SCA
+poll (the TPP polls this until the out-of-band ceremony completes);
+an `expired` ceremony window is observed here (the honest poll answer).
+
+<ParamsDetails>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./poll-decoupled.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./poll-decoupled.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

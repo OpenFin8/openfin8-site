@@ -1,0 +1,1 @@
+{"responses":{"403":{"description":"The consent chokepoint rejected the read"},"501":{"description":"The card-account resource is not served by this deployment"}}}

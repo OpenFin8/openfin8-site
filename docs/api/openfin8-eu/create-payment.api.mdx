@@ -1,0 +1,71 @@
+---
+id: create-payment
+title: "`POST /v1/payments/{paymentProduct}`"
+description: "Create payment."
+sidebar_label: "`POST /v1/payments/{paymentProduct}`"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVV9tu20YQ/ZXBPskoZcvyJS7zJLtOoKKJFdNOW1hGs9wdShtTu8xe5AiC/r0YLnWxaAR56EsFCCJ253rmzAy1ZJ5PHEsfWMUXM9TesceEmQot98rooWQpExa5x38aAZYwi98COn9p5IKlSyaM9nSRLhmvqlKJWvXoqzOazpyY4ozTk19UyFJm8q8oyI5EJ6yqSJql7MvoJruDo/nx0TqUo2XzNLJGBuFXX6ALfoowzG6guYIq3o210sqr2jU0AUInux4NQFiUyoO3XLsCbQJKO8+1T0BY41w3N1aiTcY6D+VT46GxCprPEJSLZ9xPweGE3L6Fv7L+AH7Pbj7CL+uYxrrf6/X7XYlWzVFSiKXh8uCwwUxZlAS1CM6bGdqhrEHIvbEDIUyowaXgbBAe5agB/DFhlaWSeIWuBnyrv0XVeav0hCWsMHbGPUtZCEq2UL6bIoyye+jkXD/B2tJBk2CEVGKuvDtkq/3oXvHWth5VgEcd6JiKfwsIU65licB97WqQjbLRQe2inXC6fMXsOrjcyAV01ix4Cbg0ItRCXZigDkpjuRjrwiISKOmLyhZ8psoFSCyUxljgQmEpXYzKqYnmPljcJv2wzVqHsqS6tMP8lF0P/riCjTqYOdrauuDaaCV42aRwfQ9Kz7lVXHs4Jq+rhHnlS8L3qu65BpDbSGe2IoktkbwNWB+4ymgXqdHvHbfha8xA0yFIrPiPmna3Mi8aMMa0z/xGtCZ+3Y9ckHzmuQ+OJZshlKGdK4Ft6m8N/BQXN6FJ6HAH3FFdUEK+gAaUptz7jl+lYGHsM7cS5UZ5y7jOhnCw5lu03E7zpyLfUQNX621Jv3PXbe7mRvA8lNwu9oi0oVAsCHFolbDTXq+d4r1+0uZZ709WVsu/QquPxgMPforaE31QRsmTtmTTFHO0qmiYBgVXJUro0G9XlMahPCADZ68Z2OBdWfN9EQGojPXAc0csppwcimCVX7D0odWZsZ3WmR2O9Vi3WZvGABfUrWPdauS9hk1gN/KElPQ6PDPWl1w/XaSbuP3UmjCZxgkU8lIJGIyGsaQ3l5+vb+8gN0HLWMCEzdBPDS3fyjhfN4afspT9cDuyhFH73m638/V3PqtK3N8Z7KTgF2fF+Wn37M3xm+7p2Xm/m58UotsXv56fFOfnvODnrdW0Q9ed4bg+rAd5YWpyN9QzFepC6YsuhhbFMyKNvoCbCvU7pS/S63vownWgZucaSBUKpbkWCJ1LtKXS8N6aUNVX75qbz/0UBsPsaFR/h1kctrSZ63oQ6oiQXQ2AV5U1XEzRJYDD3wYZfPpzcHXUFFnQgKmZSfeUndITyLl7QhoQQA2565eipvIVqkQH3DY1dVOUELRECzXh1BzhysxmRjsYeG9VHmrqnx72oHN1BZd/0+PBWxqXJlgRXzEcCG6tQgnPykfG8B3lyqJDO0cZw9L1tidPFgu0SOFZnHGl404bEgGIJbHr3gclsaSNRywrlUAaCumS0YsOS9mH4R3c3MKgIqy6/cMevZFIKlah0L4qsErYHK2Lde0dHscj4u2M6x3TP/N+t8+TnZfL/18PN0Pe43d/VJVcacIl2DLuMernBzY/3tl6LGHpS0RoAU5pAqQPbLnMucN7W65WdPwtoG1mXZ1PTj338LhK2BS5pFo9LNkTLgi5iGH3jgIi8TJQYK29v0rWGgMhsPI/lH3cGVJUWZawvPlDMDOSdCx/pvXPn1nKGP2pIO16/dVnS1ZyPQl8QrLRJn3+BWenYMg=
+sidebar_class_name: "post api-method"
+info_path: docs/api/openfin8-eu/openfin-8-eu
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"`POST /v1/payments/{paymentProduct}`"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/payments/{paymentProduct}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create payment.
+
+payment initiation: verify the
+QSEALC signature (EU invariant 1, fail-closed), then proxy to
+Bank8:Payments through the public API (the OBVERT boundary).
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./create-payment.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./create-payment.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

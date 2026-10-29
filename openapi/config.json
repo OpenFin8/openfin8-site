@@ -22,5 +22,13 @@
       "groupPathsBy": "tag",
       "categoryLinkSource": "info"
     }
+  },
+  "openfin8-eu": {
+    "specPath": "openapi/openfin8-eu-spec.json",
+    "outputDir": "docs/api/openfin8-eu",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
   }
 }

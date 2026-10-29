@@ -1,0 +1,71 @@
+---
+id: start-authorisation
+title: "`POST /v1/consents/{id}/authorisations`"
+description: "Start authorisation."
+sidebar_label: "`POST /v1/consents/{id}/authorisations`"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVV9tOIzkQ/ZVSvSxInQRYHkY9T00moEi7C0NgL0rQ4nRX0p7ptj22OyGK8j37H/tlq3J3boQBtNqXRUIE21V1fKrqlLNEL6YO4yGmWjlSHh8i1Ias8FKrfoYxOi+s/1NUPtdWurCOEVr6VpHzFzpbYLxka8/W8RKFMYVMw7nOF6cVr7k0p1LwJ78whDHq8RdKPUaYkUutNMFrjHc5gbHUcp4MNCFieLy5HtxBZ3baaUC6zlJmq84eJvcIrZEKYEEo2NsDV41blpyubEpwpEM4URQLcFRQ6qWags8JBt1kpIQxVos0h4ve5fVtL2zcDO4hJUulVgsY01QqBy3o3cOn3qB/9Uu7zODvv37cHjk/bmOExjKTXpJreAl+tywM0Xkr1RQjVFVRMPWHdAy6CWwgTbQFn0u3jXSU0URUhXfgdYBaCpUJr+1ipB4tZdJS6h+P27haReilL5j9AbOU7DJ0W3ONKz7GxEtLGcbeVhQWnGHmwz3OTk75zz7S5Pt0p5aEpwyj/6pIklezm+m0Kkl5OJpLS+ByYShkY3urIe7Z9xtsXFnhs/PCVw6jbcoibG6RhAZ5K7HbvL6Rz/1c2kq5Nq6iA3gvOJ5oWwqPMVaVzF4MtM+RzILn7TX/lU8jLFPbeNk43XDzmtNMeGp5WdKB5y7bM0jedV6UJrilJyMtuV23L3TMO/wz8jXJPzgIfhchxKTQ894TpdVzol8L9F12Lgs9B1q7g8zK2VpZtv0qxoG6SnlZQJAryo4DGOOqNyAchmRhkhkpL/0CtEqp+W8iqc5NU8vvKk1DtrUpzWctFtzsq8gzAaklghVkFeH5yckLIrH2rbQHR3ZGGYwXdRNkZAq94MbFYH5+aH6vvio9V+vqC1gcpZWVfoHx8ICfQT0LdlG2R2qk/M6QiRt5AqFG6rWZQYybe3eTSelAegeMqBaq42ikXhst8M7JwmJVks81T1+jHSugET7HGN+agRghq+ntdjj3nkRpOF27OrUuglWEUk10qI4mqdqQmkj1oUXVQY0MuLLUB7g2pC6l+hD37nkKVqyGQgGbwkQqwWV4dEG2kAqurK5M2Lpsdn49iyHpDzo34bc/AD0jC78PzpIoMOJzS/t8kYuA+p+SAXz+Lel2Pg96yU9dZo3rPBWe952cKuZ6LNxX8u64DVzRu3EZdXLTh4ksyIGwBKYaF9LllEGlMrJQ69CMoKvLUisHifdWjutuPm+fwFG3Cxd/8Mfjj7CpDc6Ng1RYKymDufR5uIfYMTaW6nqvYakgJRzJ0oQsMTxLpeBnBZv2OWXcC3UlXlUyo0IqCqVRyJS40eIlKlFyzn7u38H1LSSGuWqdtU8wwo0M2BcPrCKckXV1Xk/ap/USF1sp1I7rdz69npfKzoPwf92GjWZ6evIdUwipmKXKFnzDuiWHODvdPh+4AeMwHZ715UOEOXdyPMTlciwc3dtiteLlbxXZRr5mwkox5jYcPqwizElknL7hEr/SgudkzWnrjlHx8aJidAdvqVW0tkjSlIx/9ezDjthwsjHCcfOoL3XGNlbM+fkk5hgj8reD+krxsl5bYiHUtBJTPlv75J9/ALeZU/s=
+sidebar_class_name: "post api-method"
+info_path: docs/api/openfin8-eu/openfin-8-eu
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"`POST /v1/consents/{id}/authorisations`"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/consents/{id}/authorisations"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Start authorisation.
+
+the pre-step: create an
+authorisation sub-resource (each SCA ceremony is its own object),
+optionally selecting the SCA approach BEFORE the PSU ceremony begins.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./start-authorisation.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./start-authorisation.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      
