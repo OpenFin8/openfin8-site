@@ -38,7 +38,7 @@ graph TD
 | Path | What it covers |
 |---|---|
 | [Products](/docs/products/openfin8-ca/) | Each jurisdiction adapter - the served surface, the ceremony, the wire |
-| API reference (sidebar "API") | The interactive, generated reference for every OpenFin8-owned route - `openfin8-ca`, `openfin8-us`, `openfin8-uk` |
+| API reference (sidebar "API") | The interactive, generated reference for every OpenFin8-owned route - `openfin8-ca`, `openfin8-us`, `openfin8-uk`, `openfin8-eu` |
 | [SDK (the kernel)](/docs/sdk/) | openfin8-core - the library every adapter embeds |
 | [Security](/docs/security/) | The consent boundary, minimization, the OBVERT boundary, spec licensing |
 | [Developers](/docs/developers/) | Integrating as a recipient or a provider |
@@ -51,9 +51,9 @@ graph TD
 |---|---|---|
 | Canada | FDX v6.x | serving |
 | United States | FDX v6.x | serving |
-| United Kingdom | OBL Read/Write API | in design (OBARCH-5) |
+| United Kingdom | OBL Read/Write API | serving (OBARCH-5) |
 | Brazil | Open Finance Brasil | designed |
-| European Union | Berlin Group openFinance | designed |
+| European Union | Berlin Group openFinance | serving (OBARCH-7) |
 | Australia | CDR | designed |
 
 A bank activates a market by enabling one service in an environment -
