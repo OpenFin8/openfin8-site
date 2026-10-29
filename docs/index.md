@@ -52,9 +52,9 @@ graph TD
 |---|---|---|
 | Canada | FDX v6.x | serving |
 | United States | FDX v6.x | serving |
-| United Kingdom | OBL Read/Write API | serving (OBARCH-5) |
+| United Kingdom | OBL Read/Write API | serving |
 | Brazil | Open Finance Brasil | designed |
-| European Union | Berlin Group openFinance | serving (OBARCH-7) |
+| European Union | Berlin Group openFinance | serving |
 | Australia | CDR | designed |
 
 A bank activates a market by enabling one service in an environment -

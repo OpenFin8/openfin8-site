@@ -71,7 +71,7 @@ integrators to their own licensed specification.
 - Harvested READMEs must carry GitHub-absolute links (the house
   pattern) so rendered pages resolve - enforced at the source repos,
   not by site-side curation.
-- UK status is marked in-design until OBARCH-5 ships - the site never
+- The adapter statuses follow the repo docs - the site never
   overstates readiness.
 
 ## 5. Business Rules & Invariants
