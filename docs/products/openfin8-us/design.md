@@ -24,23 +24,22 @@ used by eFinTech-style apps. It embeds `openfin8-core` and supplies
 exactly three things: the FDX profile descriptor, the FDX ceremony
 implementation, and the FDX provider router.
 
-**The rename, concretely** (all shipped as one atomic change):
+**The service identity, concretely:**
 
-| Today (bank8-fdx) | After (openfin8-us) |
+| Aspect | Value |
 |---|---|
-| `service_type: bank8:fdx` | `service_type: openfin8:us` |
-| env prefix `BANK8_FDX_*` | `OPENFIN8_US_*` |
-| schema `fdx` | schema `openfin8_us` (SQL data migration) |
-| event family `fdx` → `bank8:fdx:*` | `openfin8:us:*` |
-| stream family `fdx` | `open-us` |
-| subdomain `bank8-fdx` | `openfin8-us` |
-| telemetry property | slug `open-us` |
-| Shield gates `bank8:fdx:...` | `openfin8:us:...` |
-
+| `service_type` | `openfin8:us` |
+| env prefix | `OPENFIN8_US_*` |
+| schema | `openfin8_us` |
+| event family | `openfin8:us:*` |
+| stream family | `open-us` |
+| subdomain | `openfin8-us` |
+| telemetry slug | `open-us` |
+| Shield gates | `openfin8:us:...` |
 The two-ledger model, the grant-ledger seeding from
 `sentin8:auth:grant:created`, the DCR-at-consent-start recipient
 flow, the middleware chokepoint, and the failure modes are all
-**unchanged** from `bank8-fdx/DESIGN.md` §1-§8 - those sections
+**unchanged** from `openfin8-ca/DESIGN.md` §1-§8 - those sections
 remain normative for this service.
 
 **Version configurability and the mount contract**:
@@ -54,7 +53,7 @@ remain normative for this service.
 2. **Spec publication policy** - `SpecPublicationPolicy::CustomerSupplied`:
    the FDX API spec is licensed (FDX API License Agreement,
    distributed exclusively by FDX) and may never be committed.
-   `docs/openapi.json` is regenerated to carry **only** bank8-owned
+   `docs/openapi.json` is regenerated to carry **only** OpenFin8-owned
    routes (`/v1/recipient/*`, `/v1/auth/consent/*`, `/v1/admin/*`,
    `/v1/health`, policy surfaces). The drift-guard test flips to
    assert NO `/fdx/` paths appear in the published spec; a committed
@@ -73,7 +72,7 @@ remain normative for this service.
 
 ```mermaid
 graph TD
-    subgraph bank8["openfin8-us (binary)"]
+    subgraph core["openfin8-us (binary)"]
         PROF["UsProfile<br/>(FDX 6.x descriptor)"]
         CER["Fdx Ceremony impl<br/>(DCR + PAR + PKCE + DPoP)"]
         WIRE["FDX provider router<br/>/fdx/v6/*"]
@@ -146,14 +145,14 @@ exchange with DPoP proof - the existing `tokens.rs` /
 recipient-start flow. The implementation moves to the
 `ConsentCeremony` impl over core's `CeremonyCtx` (auth client,
 secrets resolution, pool); behavior is byte-identical to
-`bank8-fdx/DESIGN.md` §4 consent flow. No JWS request signing (that
+`openfin8-ca/DESIGN.md` §4 consent flow. No JWS request signing (that
 is UK/BR territory), no mTLS client cert beyond the platform's
 standard workload TLS.
 
 ## 4. API Surface (unchanged families, versioned mounts)
 
 The provider surface keeps every family from
-`bank8-fdx/DESIGN.md` §4 - accounts (+ statements 302→Storage,
+`openfin8-ca/DESIGN.md` §4 - accounts (+ statements 302→Storage,
 payment-networks + revocation), customers, consents (introspection,
 revocation, lifecycle), money movement (transfers, payments, payees,
 recurring), PIP, notification subscriptions + feed, discovery
@@ -168,18 +167,18 @@ profile config), defaulting to the configured one.
 
 ## 5. Data Model
 
-Schema `openfin8_us` (renamed from `fdx`): the 15 core tables move to
+Schema `openfin8_us`: the 15 core tables live in
 `openfin8-core` SQL parameterized by schema; the fdx
-→ openfin8_us migration is a schema rename + the column generalizations
+the schema carries the column generalizations
 (`fdx_version` → `standard_version`). No US-specific tables are
 added. The `consents.intent_payload` column stays NULL for FDX
 consents (FDX has no intent document between creation and grant).
 
 ## 6. Registration & Configuration
 
-- `service-registration.json` (vertical bank8): service_type
-  `openfin8:us`, subdomain `openfin8-us`; policy sets/gates
-  renamed from `bank8:fdx:*` to `openfin8:us:*`; the consent
+- `service-registration.json` (openfin8 vertical): service_type
+  `openfin8:us`, subdomain `openfin8-us`; policy sets/gates under
+  `openfin8:us:*`; the consent
   provider/flow entries (OAuth profile flags at Auth) unchanged in
   shape.
 - `catalog.json`: binary `openfin8-us`, database env var
@@ -192,7 +191,7 @@ consents (FDX has no intent document between creation and grant).
 
 ## 7. Spec Publication
 
-- Published `docs/openapi.json`: bank8-owned routes only
+- Published `docs/openapi.json`: OpenFin8-owned routes only
   (utoipa-derived; the `/fdx/*` annotations move out of the
   published aggregate - they remain on the handlers, aggregated into
   a separate non-published spec struct).
@@ -201,17 +200,17 @@ consents (FDX has no intent document between creation and grant).
   under the FDX API License and drop it under gitignored
   `specs/fdx/{version}/`.
 - Drift guard: `tests/openapi_publication.rs` asserts (a) the
-  operation floor for bank8-owned routes, (b) zero `/fdx/` paths,
+  operation floor for OpenFin8-owned routes, (b) zero `/fdx/` paths,
   (c) no FDX-derived schema names leak into components.
 
 ## 8. Failure Modes / Invariants / Testing
 
-Carried from `bank8-fdx/DESIGN.md` §5-§9 unchanged (consent
+Carried from `openfin8-ca/DESIGN.md` §5-§9 unchanged (consent
 middleware chokepoint, terminal revocation, secret references,
 same-transaction discipline, no cross-tenant SQL). New: the profile
 isolation invariant - the US binary mounts no UK/CA
-routes by construction. Testing: the existing `bank8-e2e` recipient
-journey retargets to the renamed service; unit tests for the route
+routes by construction. Testing: the recipient journey runs per
+jurisdiction; unit tests for the route
 contract derive from `FDX_ROUTES` data instead of inline arrays.
 
 ## 9. Open Questions
@@ -225,7 +224,7 @@ contract derive from `FDX_ROUTES` data instead of inline arrays.
 - **Certification metrics naming** - the FDX certification-metrics
   endpoint's wire shape stays FDX-defined; confirm the counters'
   audit-action prefixes (`data_call*`) survive the event-family
-  rename without a metric discontinuity.
+  swap without a metric discontinuity.
 
 ---
 

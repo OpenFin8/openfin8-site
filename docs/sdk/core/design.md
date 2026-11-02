@@ -34,10 +34,10 @@ embedding service owns boot; (c) adapters already depend on the SDK
 git pin, so the version pin rides the existing `bank8-v*` tags with
 no new supply chain.
 
-**What moves here from `bank8-fdx` (the extraction inventory).**
+**What moves here from `openfin8-ca` (the extraction inventory).**
 ~70% of the current service is standard-agnostic and moves as-is:
 
-| Current module (bank8-fdx) | Disposition in core | Notes |
+| Current module (openfin8-ca) | Disposition in core | Notes |
 |---|---|---|
 | `consent_records.rs`, `common.rs` (grant-ledger halves) | `core::consent` | grant ledger, revocation records, lifecycle windows - **standard-agnostic today** |
 | `recipients`/`recipient_consents` plumbing in `handlers.rs` | `core::recipient` | two-ledger model, DCR cache pattern, token-reference custody |
@@ -301,7 +301,7 @@ by construction.
   machines, route-contract matching) + adapter integration tests
   (ceremony against scratch Auth, route table validation) + the
   e2e recipient journey per country in `bank8-e2e`.
-- **Migration**: `bank8-fdx` becomes `openfin8-us` in-place
+- **Migration**: `openfin8-ca` becomes `openfin8-us` in-place
   (service_type, schema rename `fdx` → `open_us` with data
   migration, event family rename). No parallel-run period - the
   rename ships as one atomic vertical release.

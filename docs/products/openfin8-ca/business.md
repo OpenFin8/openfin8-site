@@ -139,7 +139,7 @@ subscriptions, provider-profile updates.
 
 - Build + tests green (publication guard included); CI green on the
   OpenFin8 org.
-- The served surface identical to what the predecessor (bank8-fdx)
+- The served surface identical to what the Canadian open-banking contract
   served - under the Canadian identity (schema `openfin8_ca`, scopes
   `openfin8:ca:*`, events `openfin8:ca:*`, `OPENFIN8_CA_*` envs).
 - ebank/efintech/admin and the e2e suites retargeted and green.
