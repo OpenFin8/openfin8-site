@@ -36,7 +36,8 @@ openfin8-site is **the public face of the openfin8 vertical**:
 | 6 | Samples page | Reference journeys (the two-ledger ceremony, webhooks) and what is deliberately not shown (licensed payloads) |
 | 7 | Kernel section | The openfin8-core SDK section - the library every adapter embeds |
 | 8 | Reference section | The harvested per-repo docs (README, DESIGN, BUSINESS, SECURITY) - the repositories remain the source of truth |
-| 9 | Search | Local site search over the full content set |
+| 9 | Legal pages | Vertical Privacy Policy and Terms of Service at `/privacy` and `/terms` - also every footer legal link target |
+| 10 | Search | Local site search over the full content set |
 
 **What the site does NOT own (business boundary):**
 
