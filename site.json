@@ -4,6 +4,9 @@
   "org": "OpenFin8",
   "domain": "openfin8.dev",
   "tagline": "Open-Source Secure Post-Quantum-Safe Consent-First Open Finance Platform That Heals and Scales Itself.",
+  "heroEyebrow": "Open-Source Open Banking",
+  "heroTitle": "OpenFin8: Autonomous Quantum-Safe Open Finance",
+  "heroDescription": "Consent-first open banking and open finance on one kernel, per jurisdiction: FDX 6.x for Canada and the US, OBL Read/Write v3.1 for the UK with FAPI 1 Advanced, and Berlin Group openFinance V2 for the EU with eIDAS QWAC/QSEAL. Data minimization is structural - no consent, no data - and every regional adapter runs the same core, so entering a new market is a registration, never a fork.",
   "accent": "#0E7C66",
   "pillarsLead": "OpenFin8 inherits the Sentin8 security model by construction - the consent ledger, the recipient registry, and every jurisdiction adapter run behind the platform's authorization pipeline, tenant isolation, and post-quantum TLS.",
   "pillars": [
@@ -122,6 +125,5 @@
       "org": "OpenFin8",
       "summary": "The recipient app (the former eFintech): provider discovery, consent journeys, consented account + transaction data - the fintech side of the two-ledger model."
     }
-  ],
-  "heroTagline": "Open-Source Post-Quantum Open Finance Platform - consent-first FAPI 3.0 / FDX sharing; heals and scales itself."
+  ]
 }
